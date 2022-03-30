@@ -1,12 +1,5 @@
 :root {
-	--gradient: linear-gradient(
-		-45deg,
-		#5aa7a7,
-		#96d7c6,
-		#bac94a,
-		#e2d36b,
-		#bf6f6c
-	);
+	--gradient: linear-gradient(-45deg, #5aa7a7, #96d7c6, #bac94a, #e2d36b, #bf6f6c);
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
@@ -34,12 +27,13 @@ body {
 a,
 a:visited {
 	text-decoration: none;
-	color: #bf6f6c;
+	color: #888;
 	font-weight: 600;
+	cursor: pointer;
 }
 
 a:hover {
-	color: #5aa7a7;
+	color: black;
 }
 
 @keyframes bg-animation {
@@ -61,6 +55,7 @@ a:hover {
 	font-size: 3rem;
 	line-height: 0.8;
 	margin: 0;
+	line-height: 1.1;
 }
 
 .sub {
@@ -100,6 +95,16 @@ a:hover {
 	box-shadow: 0 0 3em rgba(1, 0, 48, 0.25);
 }
 
+.icons {
+	margin: 0 5px;
+	cursor: pointer;
+	color: #888;
+}
+
+.icons:hover {
+	color: black;
+}
+
 @media only screen and (max-width: 800px) {
 	.desc {
 		max-width: 100%;
@@ -113,5 +118,8 @@ a:hover {
 @media only screen and (max-width: 500px) {
 	.title {
 		font-size: 2.4rem;
+	}
+	.wrapper {
+		padding: 2em;
 	}
 }
